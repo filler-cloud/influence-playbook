@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Influence Vault</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fefefe;
+      color: #111;
+      line-height: 1.6;
+    }
+    header, footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #fff;
+    }
+    nav {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f7f7f7;
+    }
+    nav a {
+      color: #ffa94d;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #ffa94d;
+      font-size: 2rem;
+    }
+    .placeholder {
+      background-color: #fff3e0;
+      padding: 1rem;
+      border-left: 5px solid #ffa94d;
+      margin-bottom: 2rem;
+    }
+    .quote-block {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-left: 5px solid #ffa94d;
+      background-color: #fffbe6;
+      font-style: italic;
+    }
+    .quote-button {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #ffa94d;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .quote-button:hover {
+      background-color: #ff8a1d;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Influence Vault</h1>
+  <p>Big Wins, Quiet Moments, and Growth Reflections</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="work.html">Work</a>
+  <a href="fitness.html">Fitness</a>
+  <a href="community.html">Community</a>
+  <a href="family.html">Family</a>
+  <a href="vault.html">Vault</a>
+</nav>
+
+<main>
+  <section>
+    <h2>🏆 Influence Wins Vault</h2>
+    <div class="placeholder">
+      <strong>#1 – 4/30/25: Advocating with Integrity and Influence</strong>
+      <p>You stood up for yourself and the integrity of your message in your upcoming commencement speech. You didn’t back down from core values, but you also didn’t burn bridges. You leveraged pathos — grounding your message in personal story and moral clarity — and used strategic influence by building alignment in advance. You met with allies before the official discussion, created a defensible position, and turned potential conflict into collaborative improvement. This was quiet strength, activated publicly.</p>
+      <p><em>Example entry to guide future ones: Keep the date, the influence moment, and the tactics used. Make it real.</em></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>🧨 Lessons from Losses</h2>
+    <div class="placeholder">
+      <strong>#1 – 4/14/25: Misalignment and Missed Opportunity in Triple Helix Deal</strong>
+      <p>You didn’t have the meetings before the meeting — the quiet coalition work that matters most. You let pride edge out preparation, and as a result, the Triple Helix negotiation fell apart. Everyone walked away with zero. You failed to shape the frame early, failed to ask who needed to be bought in ahead of time, and underestimated how fragile shared value can be. This wasn’t a strategic loss. It was an emotional one — and a reminder: prep isn’t just for content, it’s for context.</p>
+      <p><em>Use this format: date, mistake or miss, and specific influence breakdown. Make the lesson usable.</em></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>💬 Inspiration Bank</h2>
+    <div class="quote-block" id="quote-box">
+      "Leadership is not about being in charge. It’s about taking care of those in your charge." — Simon Sinek
+    </div>
+    <button class="quote-button" onclick="newQuote()">Refresh Quote</button>
+  </section>
+</main>
+
+<footer>
+  <p>carry with you the lessons you've learned.</p>
+</footer>
+
+<script>
+  const quotes = [
+    "Leadership is not about being in charge. It’s about taking care of those in your charge. — Simon Sinek",
+    "You can’t influence people you don’t understand.",
+    "You can’t build trust overnight. But you can lose it in a moment.",
+    "The most powerful voice is often the quietest in the room.",
+    "Influence isn’t about power. It’s about permission.",
+    "You don't have to be loud to lead — you have to be clear.",
+    "Influence begins when people feel seen, not sold to.",
+    "Coalitions are built in hallways, not just boardrooms.",
+    "Never underestimate the impact of a well-timed thank you.",
+    "Small wins, stacked intentionally, change everything.",
+    "Being right is overrated — being relatable wins trust.",
+    "If you want to go fast, go alone. If you want to go far, go together.",
+    "Trust is earned in moments when no one is watching.",
+    "Make people feel smart in your presence — not impressed by you.",
+    "Be the person who brings energy, not just answers."
+  ];
+
+  function newQuote() {
+    const quoteBox = document.getElementById("quote-box");
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    quoteBox.textContent = quotes[randomIndex];
+  }
+</script>
+
+</body>
+</html>
